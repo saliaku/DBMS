@@ -10,4 +10,6 @@ int main() {
     cout << "Input 1: " << input1 << endl;
     cout << "Input 2: " << input2 << endl;
     return 0;
+
+    //hello this is the fist test commit for github
 }
