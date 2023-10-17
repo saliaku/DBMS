@@ -9,7 +9,7 @@ NOTE: this function expects the caller to allocate memory for `*attrCatBuf`
 */
 int AttrCacheTable::getAttrCatEntry(int relId, int attrOffset, AttrCatEntry* attrCatBuf) {
   // check if 0 <= relId < MAX_OPEN and return E_OUTOFBOUND otherwise
-  if(relId>=0 && relId<MAX_OPEN)
+  if(relId<0 && relId>=MAX_OPEN)
   {
     return E_OUTOFBOUND;
   }
@@ -26,6 +26,7 @@ int AttrCacheTable::getAttrCatEntry(int relId, int attrOffset, AttrCatEntry* att
 
       // copy entry->attrCatEntry to *attrCatBuf and return SUCCESS;
       *attrCatBuf=entry->attrCatEntry;
+      return SUCCESS;
     }
   }
 
