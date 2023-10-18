@@ -44,11 +44,9 @@ int RecBuffer::getRecord(union Attribute *rec, int slotNum)
 {
   struct HeadInfo head;
     // unsigned char buffer[BLOCK_SIZE];
-
-
-
   // get the header using this.getHeader() function
-  BlockBuffer::getHeader(&head);
+  this->getHeader(&head);
+  //BlockBuffer::getHeader(&head);
 
   int attrCount = head.numAttrs;
   int slotCount = head.numSlots;
