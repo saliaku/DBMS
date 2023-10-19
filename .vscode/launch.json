@@ -28,8 +28,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/kailas/DBMS/NITCbase/mynitcbase/Cache",
-      "program": "/home/kailas/DBMS/NITCbase/mynitcbase/Cache/build/Debug/outDebug",
+      "cwd": "/home/kailas/DBMS/NITCbase/mynitcbase",
+      "program": "/home/kailas/DBMS/NITCbase/mynitcbase/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -13,4 +13,6 @@ int main() {
 
     //hello this is the fist test commit for github
     //hello this is the second test commmit made from the old hp laptop
+    // installed debian in the laptop checking if allt he files are all right 
+    
 }
