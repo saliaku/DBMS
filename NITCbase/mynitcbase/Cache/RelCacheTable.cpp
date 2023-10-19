@@ -22,7 +22,7 @@ int RelCacheTable::getRelCatEntry(int relId, RelCatEntry* relCatBuf) {
   {
     //load the values for the next realation 
     RecBuffer relCatBlock(relId);
-    *relCatBuf
+    *relCatBuf;
   }
 
   // copy the value to the relCatBuf argument

@@ -213,7 +213,7 @@ int main(int argc, char *argv[]) {
           printf("  %s: %s\n", attrName, attrType);
   */
     
-    for(int i=0;i<6;i++){
+    for(int i=0;i<2;i++){
       RelCatEntry relcatent ;
       RelCacheTable::getRelCatEntry(i,&relcatent);
       // if(i==2)
