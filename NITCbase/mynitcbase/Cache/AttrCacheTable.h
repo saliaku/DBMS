@@ -23,7 +23,7 @@ typedef struct AttrCacheEntry {
   struct AttrCacheEntry *next;
 
 } AttrCacheEntry;
-
+ 
 class AttrCacheTable {
   friend class OpenRelTable;
 

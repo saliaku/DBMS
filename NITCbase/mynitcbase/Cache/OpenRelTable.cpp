@@ -9,6 +9,10 @@ OpenRelTable::OpenRelTable() {
   // initialize relCache and attrCache with nullptr
   for (int i = 0; i < MAX_OPEN; ++i) {
     RelCacheTable::relCache[i] = nullptr;
+    //relation cache and attribute cache are specialised
+    //data structures used fo raccessing the catalogs.
+    //these caches are both arrays of size 12 MAX_OPEN  
+    //each entry in these array can store the catalog entries for a single relation
     AttrCacheTable::attrCache[i] = nullptr;
   }
 

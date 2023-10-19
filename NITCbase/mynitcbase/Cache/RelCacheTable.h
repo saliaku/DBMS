@@ -25,7 +25,7 @@ typedef struct RelCacheEntry {
 
 class RelCacheTable {
   friend class OpenRelTable;
-
+ 
  public:
   // methods
   static int getRelCatEntry(int relId, RelCatEntry *relCatBuf);

@@ -1,6 +1,6 @@
 #ifndef NITCBASE_OPENRELTABLE_H
 #define NITCBASE_OPENRELTABLE_H
-
+ 
 #include "../BlockAccess/BlockAccess.h"
 #include "../Buffer/BlockBuffer.h"
 #include "../define/constants.h"

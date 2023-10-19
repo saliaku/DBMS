@@ -18,6 +18,13 @@ int RelCacheTable::getRelCatEntry(int relId, RelCatEntry* relCatBuf) {
     return E_RELNOTOPEN;
   }
 
+  if(relId>1)
+  {
+    //load the values for the next realation 
+    RecBuffer relCatBlock(relId);
+    *relCatBuf
+  }
+
   // copy the value to the relCatBuf argument
   *relCatBuf = relCache[relId]->relCatEntry;
 
@@ -29,8 +36,7 @@ int RelCacheTable::getRelCatEntry(int relId, RelCatEntry* relCatBuf) {
     This function will convert that to a struct RelCatEntry type.
 NOTE: this function expects the caller to allocate memory for `*relCatEntry`
 */
-void RelCacheTable::recordToRelCatEntry(union Attribute record[RELCAT_NO_ATTRS],
-                                        RelCatEntry* relCatEntry) {
+void RelCacheTable::recordToRelCatEntry(union Attribute record[RELCAT_NO_ATTRS],RelCatEntry* relCatEntry) {
   strcpy(relCatEntry->relName, record[RELCAT_REL_NAME_INDEX].sVal);
   relCatEntry->numAttrs = (int)record[RELCAT_NO_ATTRIBUTES_INDEX].nVal;
 
